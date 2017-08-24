@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+recursive-include publications/templates *
+recursive-include publications/migrations *
+recursive-include publications/templatetags *
+recursive-include publications/locale *
