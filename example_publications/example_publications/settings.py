@@ -213,5 +213,9 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.filters'
 )
 
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, "locale"),
+)
+
 PUB_PAGINATION = 6
 POSTS_LIST_TRUNCWORDS_COUNT = 120

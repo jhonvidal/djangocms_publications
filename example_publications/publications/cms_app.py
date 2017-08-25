@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class PublicationsApphook(CMSApp):
-    name = _("Publicarions")
+    name = _("Publications")
     urls = ["publications.urls"]
 
 
