@@ -96,4 +96,4 @@ ENV/
 # mypy
 .mypy_cache/
 
-example_publications/.idea/*
+.idea/*
