@@ -11,7 +11,7 @@ Install & settings
 
 1. Install the app
     ```
-    ***********
+    pip install git+https://github.com/jhonvidal/djangocms_publications.git@master
     ```
 
 
