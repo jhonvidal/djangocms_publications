@@ -13,7 +13,7 @@ from djangocms_text_ckeditor.fields import HTMLField
 from filer.fields.image import FilerImageField
 
 # Reverse
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 # I18N
 from django.utils.translation import ugettext as _
@@ -38,7 +38,7 @@ class Post(models.Model):
     edit_date = models.DateTimeField(_('Edit on'), auto_now=True)
     categories = models.ManyToManyField(CategoryPost, verbose_name=_("Categories"), related_name='post_categories')
     tags = TaggableManager()
-    picture = FilerImageField(verbose_name=_("Head picture"))
+    picture = FilerImageField(verbose_name=_("Head picture"),on_delete=models.CASCADE,)
     body = HTMLField(verbose_name=_('Post'))
     is_publish = models.BooleanField(_("is publish ?"), default=True)
 
