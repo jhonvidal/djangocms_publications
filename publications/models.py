@@ -13,7 +13,7 @@ from djangocms_text_ckeditor.fields import HTMLField
 from filer.fields.image import FilerImageField
 
 # Reverse
-from django.urls import reverse
+from django.core.urlresolvers import reverse
 
 # I18N
 from django.utils.translation import ugettext as _
